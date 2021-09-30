@@ -1,7 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { PagesComponent } from './pages.component';
-
 import { ListadoComponent } from './listado/listado.component';
 
 const pagesRoutes: Routes = [

@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
-
 @NgModule({
     imports: [
         RouterModule,

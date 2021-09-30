@@ -13,6 +13,7 @@ export class ListadoComponent implements OnInit {
 
  public encuestas: Encuesta[] = [];
  public cantEncuestas = 0;
+
   constructor(
     public _encuestaService: EncuestaService,
     public router: Router
@@ -27,16 +28,15 @@ export class ListadoComponent implements OnInit {
     this._encuestaService.getEncuestas()
             .subscribe( encuestas => {this.encuestas = encuestas;
                                            this.cantEncuestas= encuestas.length
-                    },
-                err => {
-                    console.debug(JSON.stringify(err));
-                    swal('Ocurrió un error, al obtener el listado de encuestas', 'error')
-                    });
+                                          },
+                      err => {
+                                    console.debug(JSON.stringify(err));
+                                    swal('Ocurrió un error, al obtener el listado de encuestas', 'error')
+                                  });
   }
 
-
   goRegistrarEncuesta(){
-  this.router.navigate(['/encuesta']);
+    this.router.navigate(['/encuesta']);
   }
 
 }

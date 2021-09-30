@@ -21,7 +21,6 @@ export class EncuestaComponent implements OnInit {
     public router: Router
   ) { }
 
-
   ngOnInit() {
       init_plugins();
 
@@ -35,7 +34,6 @@ export class EncuestaComponent implements OnInit {
       });
 
   }
-
 
   registrarEncuesta() {
 
